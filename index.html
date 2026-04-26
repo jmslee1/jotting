@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Jotting</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div id="app">
+      <aside id="sidebar">
+        <div id="sidebar-header">
+          <button id="pick-vault" title="Open vault folder">Open vault</button>
+          <button id="new-note" disabled title="New note (⌘N)">+ New</button>
+        </div>
+        <input id="search" type="text" placeholder="Search…" disabled />
+        <ul id="note-list"></ul>
+      </aside>
+      <main id="editor-pane">
+        <input id="title-input" type="text" placeholder="Note title" disabled />
+        <textarea id="editor" placeholder="Open a vault to start writing…" disabled spellcheck="true"></textarea>
+        <div id="status">no vault</div>
+      </main>
+    </div>
+    <script type="module" src="main.js"></script>
+  </body>
+</html>
